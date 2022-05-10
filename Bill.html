@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_bill.css">
+    <script src="https://kit.fontawesome.com/41d4801a01.js" crossorigin="anonymous"></script>
+    <title>Quản Lý Bill </title>
+</head>
+<body>
+     <!-- Header -->
+     <div class="hearder">
+        <a href="#" class="hearder--text"> 
+            Hệ Thống Quản Lý Phòng Trọ
+        </a>
+       
+        <ul class="header--nav-manager">
+            <li class="nav-item" id="Home"><a href="./index.html"><i class="fa-solid fa-house"></i> Nhà </a></li>
+            <li class="nav-item" id="rom"> <a href="./Element_rom.html"><i class="fa-solid fa-people-roof"></i> Phòng </a></li>
+            <li class="nav-item" id="bill"> <a href=""><i class="fa-solid fa-soap"></i> Chốt HĐ </a></li>
+            <li class="nav-item"> <a href="./collect.html"><i class="fa-solid fa-money-bill-1-wave"></i>  Hóa Đơn </a></li>
+            <li class="nav-item"> <a href="./customer.html"><i class="fa-solid fa-user"></i>  Khách Hàng </a></li>
+        </ul>
+    
+        <div class="hearder--email" style="color: #fff;">
+            <i class="fa-solid fa-envelope"> </i> <a href="mailto: quocthienorg@gmail.com" class="hearder--email--adress"> quocthienorg@gmail.com</a>
+        </div>
+            <div class="hearder--phone" style="color: #fff;">
+                <i class="fa-solid fa-phone"></i> <p class="hearder--phone--numberphone"> 0789624614</p>
+            </div>
+    </div>
+    <!-- container -->
+    <div class="container ">
+        <div class="container__header container-element">
+            <b>Bộ Lọc:</b>
+            <div class="container__header__top">
+                <div class="container__header__top-ele">
+                    <i class="fa-solid fa-calendar" style="color: rgb(166, 211, 81);"></i>  <input type="month" id="filter" name="start"
+          min="2010-03" value="2022-05">
+                </div>
+
+                <div class="container__header__top-ele">
+                    <i class="fa-solid fa-filter" style="color: rgb(166, 211, 81);"></i> 
+                    <select name="fitter" id="filter">
+                        <option value="">Tất cả</option>
+                        <option value="">Chưa chốt</option>
+                        <option value="">Đã chốt</option>
+                        <option value="">Đơn nháp</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container__header__footer">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="search" id="search" placeholder="tiềm theo tên phòng">
+            </div>
+        </div>
+        <!-- Phòng01 -->
+        <div class="container__body container-element" >
+            <div class="container__body_left">
+                <p class="body-name">P.101</p>
+                <div class="body-about">
+                        <p>Đơn: </p>
+                        <!-- Điện -->
+                        <div class="body-about-item">
+                            <div class="body-about-item-ele">
+                                <p class="ele-title">->Điện:</p>
+                                <input type="number" min="0" placeholder="chỉ số củ">
+                                <input type="number" min="0" placeholder="chỉ số mới">
+                                <p class="ele-price-title">thành tiền </p>
+                                <div class="ele-price"> 0 vnd </div>
+                        </div>
+                    </div>
+                    <!-- Nước -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Nước:</p>
+                            <input type="number" min="0" placeholder="chỉ số củ">
+                            <input type="number" min="0" placeholder="chỉ số mới">
+                            <p class="ele-price-title">thành tiền </p>
+                            <div class="ele-price"> 0 vnd </div>
+                        </div>
+                    </div>
+                    <!-- Loại phòng -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Loại Phòn: B</p>
+                            <p class="ele-price-title">thành tiền </p>
+                            <div class="ele-price"> 500000 vnd </div>
+                        </div>
+                    </div>
+                    <!-- Phát sinh -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Phát sinh:</p>
+                            <input type="number" min="0" placeholder="chi phí phát sinh">
+                        </div>
+                    </div>
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">Tổng:</p>
+                            <div class="ele-price"> 700000 vnd </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <!-- phải -->
+            <div class="container__body_right">
+                <button type="button" id="button_price" style="background-color: rgb(168, 214, 61);">Lưu nháp</button>
+                <button type="button" id="button_price" style="background-color: rgb(196, 56, 56);">Chốt Đơn</button>
+                
+            </div>
+        
+        </div> 
+        <!-- Phòng02 -->
+        <div class="container__body container-element" >
+            <div class="container__body_left">
+                <p class="body-name">P.102</p>
+                <div class="body-about">
+                        <p>Đơn: </p>
+                        <!-- Điện -->
+                        <div class="body-about-item">
+                            <div class="body-about-item-ele">
+                                <p class="ele-title">->Điện:</p>
+                                <input type="number" min="0" placeholder="chỉ số củ">
+                                <input type="number" min="0" placeholder="chỉ số mới">
+                                <p class="ele-price-title">thành tiền </p>
+                                <div class="ele-price"> 0 vnd </div>
+                        </div>
+                    </div>
+                    <!-- Nước -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Nước:</p>
+                            <input type="number" min="0" placeholder="chỉ số củ">
+                            <input type="number" min="0" placeholder="chỉ số mới">
+                            <p class="ele-price-title">thành tiền </p>
+                            <div class="ele-price"> 0 vnd </div>
+                        </div>
+                    </div>
+                    <!-- Loại phòng -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Loại Phòn: A</p>
+                            <p class="ele-price-title">thành tiền </p>
+                            <div class="ele-price"> 700000 vnd </div>
+                        </div>
+                    </div>
+                    <!-- Phát sinh -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Phát sinh:</p>
+                            <input type="number" min="0" placeholder="chi phí phát sinh">
+                        </div>
+                    </div>
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">Tổng:</p>
+                            <div class="ele-price"> 700000 vnd </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <!-- phải -->
+            <div class="container__body_right">
+                <button type="button" id="button_price" style="background-color: rgb(168, 214, 61);">Lưu nháp</button>
+                <button type="button" id="button_price" style="background-color: rgb(196, 56, 56);">Chốt Đơn</button>
+                
+            </div>
+        
+        </div> 
+        <!-- Phòng03  -->
+        <div class="container__body container-element" >    
+            <div class="container__body_left">
+                <p class="body-name">P.103</p>
+                <div class="body-about">
+                        <p>Đơn: </p>
+                        <!-- Điện -->
+                        <div class="body-about-item">
+                            <div class="body-about-item-ele">
+                                <p class="ele-title">->Điện:</p>
+                                <input type="number" min="0" placeholder="chỉ số củ">
+                                <input type="number" min="0" placeholder="chỉ số mới">
+                                <p class="ele-price-title">thành tiền </p>
+                                <div class="ele-price"> 0 vnd </div>
+                        </div>
+                    </div>
+                    <!-- Nước -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Nước:</p>
+                            <input type="number" min="0" placeholder="chỉ số củ">
+                            <input type="number" min="0" placeholder="chỉ số mới">
+                            <p class="ele-price-title">thành tiền </p>
+                            <div class="ele-price"> 0 vnd </div>
+                        </div>
+                    </div>
+                    <!-- Loại phòng -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Loại Phòn: C</p>
+                            <p class="ele-price-title">thành tiền </p>
+                            <div class="ele-price"> 600000 vnd </div>
+                        </div>
+                    </div>
+                    <!-- Phát sinh -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Phát sinh:</p>
+                            <input type="number" min="0" placeholder="chi phí phát sinh">
+                        </div>
+                    </div>
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">Tổng:</p>
+                            <div class="ele-price"> 600000 vnd </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <!-- phải -->
+            <div class="container__body_right">
+                <button type="button" id="button_price" style="background-color: rgb(168, 214, 61);">Lưu nháp</button>
+                <button type="button" id="button_price" style="background-color: rgb(196, 56, 56);">Chốt Đơn</button>
+                
+            </div>
+        
+        </div> 
+        
+    <div class="container__body container-element" >
+        <div class="container__body_left">
+            <p class="body-name">P.104</p>
+            <div class="body-about">
+                    <p>Đơn: </p>
+                    <!-- Điện -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Điện:</p>
+                            <input type="number" min="0" placeholder="chỉ số củ">
+                            <input type="number" min="0" placeholder="chỉ số mới">
+                            <p class="ele-price-title">thành tiền </p>
+                            <div class="ele-price"> 0 vnd </div>
+                    </div>
+                </div>
+                <!-- Nước -->
+                <div class="body-about-item">
+                    <div class="body-about-item-ele">
+                        <p class="ele-title">->Nước:</p>
+                        <input type="number" min="0" placeholder="chỉ số củ">
+                        <input type="number" min="0" placeholder="chỉ số mới">
+                        <p class="ele-price-title">thành tiền </p>
+                        <div class="ele-price"> 0 vnd </div>
+                    </div>
+                </div>
+                <!-- Loại phòng -->
+                <div class="body-about-item">
+                    <div class="body-about-item-ele">
+                        <p class="ele-title">->Loại Phòn: A</p>
+                        <p class="ele-price-title">thành tiền </p>
+                        <div class="ele-price"> 700000 vnd </div>
+                    </div>
+                </div>
+                <!-- Phát sinh -->
+                <div class="body-about-item">
+                    <div class="body-about-item-ele">
+                        <p class="ele-title">->Phát sinh:</p>
+                        <input type="number" min="0" placeholder="chi phí phát sinh">
+                    </div>
+                </div>
+                <div class="body-about-item">
+                    <div class="body-about-item-ele">
+                        <p class="ele-title">Tổng:</p>
+                        <div class="ele-price"> 700000 vnd </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <!-- phải -->
+        <div class="container__body_right">
+            <button type="button" id="button_price" style="background-color: rgb(168, 214, 61);">Lưu nháp</button>
+            <button type="button" id="button_price" style="background-color: rgb(196, 56, 56);">Chốt Đơn</button>
+            
+        </div>
+    
+    </div> 
+    <!-- Phòng 05 -->   
+    <div class="container__body container-element" >
+        <div class="container__body_left">
+            <p class="body-name">P.105</p>
+            <div class="body-about">
+                    <p>Đơn: </p>
+                    <!-- Điện -->
+                    <div class="body-about-item">
+                        <div class="body-about-item-ele">
+                            <p class="ele-title">->Điện:</p>
+                            <input type="number" min="0" placeholder="chỉ số củ">
+                            <input type="number" min="0" placeholder="chỉ số mới">
+                            <p class="ele-price-title">thành tiền </p>
+                            <div class="ele-price"> 0 vnd </div>
+                    </div>
+                </div>
+                <!-- Nước -->
+                <div class="body-about-item">
+                    <div class="body-about-item-ele">
+                        <p class="ele-title">->Nước:</p>
+                        <input type="number" min="0" placeholder="chỉ số củ">
+                        <input type="number" min="0" placeholder="chỉ số mới">
+                        <p class="ele-price-title">thành tiền </p>
+                        <div class="ele-price"> 0 vnd </div>
+                    </div>
+                </div>
+                <!-- Loại phòng -->
+                <div class="body-about-item">
+                    <div class="body-about-item-ele">
+                        <p class="ele-title">->Loại Phòn: A</p>
+                        <p class="ele-price-title">thành tiền </p>
+                        <div class="ele-price"> 700000 vnd </div>
+                    </div>
+                </div>
+                <!-- Phát sinh -->
+                <div class="body-about-item">
+                    <div class="body-about-item-ele">
+                        <p class="ele-title">->Phát sinh:</p>
+                        <input type="number" min="0" placeholder="chi phí phát sinh">
+                    </div>
+                </div>
+                <div class="body-about-item">
+                    <div class="body-about-item-ele">
+                        <p class="ele-title">Tổng:</p>
+                        <div class="ele-price"> 700000 vnd </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <!-- phải -->
+        <div class="container__body_right">
+            <button type="button" id="button_price" style="background-color: rgb(168, 214, 61);">Lưu nháp</button>
+            <button type="button" id="button_price" style="background-color: rgb(196, 56, 56);">Chốt Đơn</button>
+            
+        </div>
+    
+    </div> 
+</div>
+<div class="footer">
+    <p class="footer-name">Nguyễn Quốc Thiện_DTH205987</p>
+    <p class="footer-name">Âu Lâm Thành_DTH206100</p>
+</div>
+</body>
+</html>

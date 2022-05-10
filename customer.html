@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_customer.css">
+    <script src="https://kit.fontawesome.com/41d4801a01.js" crossorigin="anonymous"></script>
+    <title>Quản Lý Khách Hàng </title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="hearder">
+        <a href="#" class="hearder--text"> 
+            Hệ Thống Quản Lý Phòng Trọ
+
+        </a>
+       
+        <ul class="header--nav-manager">
+            <li class="nav-item" id="Home"><a href="./index.html"><i class="fa-solid fa-house"></i> Nhà </a></li>
+            <li class="nav-item" id="rom"> <a href="./Element_rom.html"><i class="fa-solid fa-people-roof"></i> Phòng </a></li>
+            <li class="nav-item"> <a href="./Bill.html"><i class="fa-solid fa-soap"></i> Chốt HĐ </a></li>
+            <li class="nav-item"> <a href="./collect.html"><i class="fa-solid fa-money-bill-1-wave"></i>  Hóa Đơn </a></li>
+            <li class="nav-item" id="customer"><a href="./customer.html"><i class="fa-solid fa-user"></i>  Khách Hàng </a></li>
+        </ul>
+    
+        <div class="hearder--email" style="color: #fff;">
+            <i class="fa-solid fa-envelope"> </i> <a href="mailto: quocthienorg@gmail.com" class="hearder--email--adress"> quocthienorg@gmail.com</a>
+        </div>
+            <div class="hearder--phone" style="color: #fff;">
+                <i class="fa-solid fa-phone"></i> <p class="hearder--phone--numberphone"> 0789624614</p>
+            </div>
+        </div>
+<!-- Container -->
+        <div class="container">
+            <div class="container-main">
+                <div class="container-body">
+                    <div class="container-top">
+                        <p class="container-top-text">
+                            <i class="fa-solid fa-list"></i>
+                            Danh sách Khách Hàng </p>
+                        <div class="container-top-seach">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <label for="seach"></label>
+                            <input type="text", placeholder = "tìm kiếm">
+                        </div>
+                    </div>
+                    <ul class="container-list">
+                        <li class="container-list-item">101: Nguyễn Quốc Thiện  </li>
+                        <li class="container-list-item">102: Nguyễn Trường Thịnh  </li>
+                        <li class="container-list-item">103: Nguyễn Tuấn Vũ  </li>
+                        <li class="container-list-item">104: Âu Lâm Thành  </li>
+                        <li class="container-list-item">105: Nguyễn Thanh Tú  </li>
+                        <li class="container-list-item">106: Nguyễn Hoài Thanh </li>
+                        <li class="container-list-item">107: Nguyễn Phước Thịnh  </li>
+                        <li class="container-list-item">108: Nguyễn Hoàng Thắng  </li>
+                        <li class="container-list-item">109: Nguyễn Hữu Toàn  </li>
+                        <li class="container-list-item">110: Nguyễn Thanh Toàn  </li>
+                        <li class="container-list-item">111: Lê Minh Thông  </li>
+                        <li class="container-list-item">112: Lưu Minh Trọng  </li>
+                        <li class="container-list-item">113: Nguyễn Văn A  </li>
+                    </ul>
+                </div>
+                <div class="container-add">
+                    <div class="container-add-title">
+                        <p class="container-add-title-text"> Thêm Khách Hàng</p>  
+                    </div>
+                    <div class="container-add-input">
+                        <div class="input-item name">
+                            <label for="name"> Mã số Khách Hàng </label><br>
+                            <input type="number" id="name" min="100" max="9999" >
+                        </div>
+                        <div class="input-item name">
+                            <label for="name"> Tên Khách Hàng </label><br>
+                            <input type="text" id="name" >
+                        </div>
+                        <div class="input-item">
+                                Giới tính: <br>
+                                <label for="loaia">Nam</label>
+                                <input type="radio" , id="loaia", name="loaiphong">
+                                <label for="loaib">Nữ</label>
+                                <input type="radio" , id="loaib", name="loaiphong">
+                        </div>
+
+                        <div class="input-item">
+                            <label for="indentity">Số CMND:</label>
+                            <input type="number" min="10000000">
+                        </div>
+                        <div class="input-item">
+                            <label for="number-phone">Số Điện Thoại:</label>
+                            <input type="number" min="100000000">
+                        </div>
+                        <div class="input-item">
+                            <label for="birth">Ngày sinh:</label>
+                            <input type="date" id="birth" name="start"
+          min="2018-03" value="2018-05">
+                        </div>
+                        <div class="input-item">
+                            <label for="status">Phương tiện</label>
+                            <select name="status" id="status">
+                                <option value="active">Không có</option>
+                                <option value="active">Xe đạp</option>
+                                <option value="aboutstop">Xe máy</option>
+                                <option value="nonactive">Xe oto</option>
+                            </select>
+                        </div>
+                        <div class="input-item">
+                            <label for="id_rom">Mã Phòng:</label>
+                            <input type="number" min="100" max="9999">
+                        </div>
+                    <div class="input-item">
+                            <label for="name"> Ghi chú:</label><br>
+                            <input type="text" id="name" >
+                        </div>
+                        
+                        <div class="input-item button">
+                           <button>Xóa</button>
+                           <button>Lưu</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container__manager">
+                <div class="container__manager-title">
+                    <i class="fa-solid fa-chart-bar"></i>
+                    Thống Kê KH
+                </div>
+                <div class="container-sum">
+                    <div class="sum-row">
+                        <div class="sum-col vip">12</div>
+                        
+                        <div class="sum-col vip last">4</div>
+                    </div>
+    
+                    <div class="sum-row">
+                        <div class="sum-col vip1">Đang Thuê</div>
+                    
+                        <div class="sum-col vip1 last">Sắp chuyển</div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Container-->
+        <div class="footer">
+            <p class="footer-name">Nguyễn Quốc Thiện_DTH205987</p>
+            <p class="footer-name">Âu Lâm Thành_DTH206100</p>
+        </div>
+</body>
+</html>

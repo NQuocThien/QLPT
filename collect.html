@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style_collect.css">
+    <script src="https://kit.fontawesome.com/41d4801a01.js" crossorigin="anonymous"></script>
+    <title>Quản Lý thu tiền </title>
+</head>
+<body>
+     <!-- Header -->
+     <div class="hearder">
+        <a href="#" class="hearder--text"> 
+            Hệ Thống Quản Lý Phòng Trọ
+        </a>
+       
+        <ul class="header--nav-manager">
+            <li class="nav-item" id="Home"><a href="./index.html"><i class="fa-solid fa-house"></i> Nhà </a></li>
+            <li class="nav-item" id="rom"> <a href="./Element_rom.html"><i class="fa-solid fa-people-roof"></i> Phòng </a></li>
+            <li class="nav-item" id="bill"> <a href="./Bill.html"><i class="fa-solid fa-soap"></i> Chốt HĐ </a></li>
+            <li class="nav-item" id="collect"> <a href="./collect.html"><i class="fa-solid fa-money-bill-1-wave"></i>  Hóa Đơn </a></li>
+            <li class="nav-item"> <a href="./customer.html"><i class="fa-solid fa-user"></i>  Khách Hàng </a></li>
+        </ul>
+    
+        <div class="hearder--email" style="color: #fff;">
+            <i class="fa-solid fa-envelope"> </i> <a href="mailto: quocthienorg@gmail.com" class="hearder--email--adress"> quocthienorg@gmail.com</a>
+        </div>
+            <div class="hearder--phone" style="color: #fff;">
+                <i class="fa-solid fa-phone"></i> <p class="hearder--phone--numberphone"> 0789624614</p>
+            </div>
+    </div>
+<!-- container -->
+    <div class="container">
+        <div class="container__header container-element">
+           
+            <div class="container__header__top">
+                 <b>Hóa đơn:</b>
+                <div class="container__header__top-ele">
+                    <i class="fa-solid fa-calendar" style="color: rgb(166, 211, 81);"></i>  <input type="month" id="filter" name="start"
+                       min="2018-03" value="2022-05">
+                </div>
+
+                <div class="container__header__top-ele">
+                    <i class="fa-solid fa-filter" style="color: rgb(166, 211, 81);"></i> 
+                    <select name="fitter" id="filter">
+                        <option value="">Tất cả</option>
+                        <option value="">Chưa thu</option>
+                        <option value="">Đã thu</option>
+                    </select>
+                </div>
+                <div class="container__header__top-ele header_search">
+                    <i class="fa-solid fa-magnifying-glass-dollar" ></i> 
+                    <input type="text" name="search" id="search" placeholder="tiềm theo tên phòng">
+                </div>
+            </div>
+            <div class="container__header-body">
+                <div class="container__header-body-item1 ">
+                    <p class="title" style="color: rgb(27, 83, 189) ; font-size: 20px;">
+                        Tổng đã thu
+                    </p>
+                    <p class="number" style="color: rgb(27, 83, 189) ;">
+                        1270000
+                    </p>
+                </div>
+                <div class="container__header-body-item2">
+                    <p class="title" style="color: rgb(194, 17, 11) ; font-size: 20px;">
+                        Tổng chưa thu
+                    </p>
+                    <p class="number " style="color: rgb(194, 17, 11) ;">
+                        5520000
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container__body container-element">
+            <!-- Phòng -->
+            <div class="container__body-ele">
+
+                <div class="container__body-head">
+                    <p class="rom" style="font-size: 25px;">101</p>
+                    <p class="status" style="color: green;"><i class="fa-solid fa-arrows-to-dot"> </i>Đã đống đủ</p>
+                </div>
+                <div class="container__body-main">
+                    <div class="container__body-main-item">
+                        <p class="sum">Tổng</p>
+                        <p class="sum-number" style="color:blue ;">700000</p>
+                    </div>
+                    <div class="container__body-main-item">
+                        <p class="pay">Đã đống</p>
+                        <p class="pay-number" style="color:rgb(0, 128, 79) ;">700000</p>
+                    </div>
+                    <div class="container__body-main-item">
+                        <p class="non-pay">Còn Thiếu </p>
+                        <p class="non-pay-number" style="color: red;">0</p>
+                    </div>
+                    <div class="container__body-main-item"></div>
+                </div>
+                <div class="container__body-footer" >
+                    <i class="fa-solid fa-file-invoice"></i> 7/5/2022 
+                    <div class="button">
+                        <button>Chi Tiết</button>
+                        <button>Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Phòng02 -->
+            <div class="container__body-ele">
+
+                <div class="container__body-head">
+                    <p class="rom" style="font-size: 25px;">102</p>
+                    <p class="status" style="color: red"><i class="fa-solid fa-arrows-to-dot"> </i>Chưa Đống</p>
+                </div>
+                <div class="container__body-main">
+                    <div class="container__body-main-item">
+                        <p class="sum">Tổng</p>
+                        <p class="sum-number" style="color:blue ;">700000</p>
+                    </div>
+                    <div class="container__body-main-item">
+                        <p class="pay">Đã đống</p>
+                        <p class="pay-number" style="color:rgb(0, 128, 79) ;">0</p>
+                    </div>
+                    <div class="container__body-main-item">
+                        <p class="non-pay">Còn Thiếu </p>
+                        <p class="non-pay-number" style="color: red;">700000</p>
+                    </div>
+                    <div class="container__body-main-item"></div>
+                </div>
+                <div class="container__body-footer"><i class="fa-solid fa-file-invoice"></i> 
+                    7/5/2022 
+                    <div class="button">
+                        <button>Chi Tiết</button>
+                        <button>Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Phong03 -->
+            <div class="container__body-ele">
+
+                <div class="container__body-head">
+                    <p class="rom" style="font-size: 25px;">103</p>
+                    <p class="status" style="color: orange  "><i class="fa-solid fa-arrows-to-dot"> </i>Chưa đống đủ</p>
+                </div>
+                <div class="container__body-main">
+                    <div class="container__body-main-item">
+                        <p class="sum">Tổng</p>
+                        <p class="sum-number" style="color:blue ;">700000</p>
+                    </div>
+                    <div class="container__body-main-item">
+                        <p class="pay">Đã đống</p>
+                        <p class="pay-number" style="color:rgb(0, 128, 79) ;">500000</p>
+                    </div>
+                    <div class="container__body-main-item">
+                        <p class="non-pay">Còn Thiếu </p>
+                        <p class="non-pay-number" style="color: red;">200000</p>
+                    </div>
+                    <div class="container__body-main-item"></div>
+                </div>
+                <div class="container__body-footer"><i class="fa-solid fa-file-invoice"></i> 7/5/2022
+                    <div class="button">
+                        <button>Chi Tiết</button>
+                        <button>Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Phòng04 -->
+            <div class="container__body-ele">
+
+                <div class="container__body-head">
+                    <p class="rom" style="font-size: 25px;">104</p>
+                    <p class="status" style="color: green;"><i class="fa-solid fa-arrows-to-dot"> </i>Đã đống đủ</p>
+                </div>
+                <div class="container__body-main">
+                    <div class="container__body-main-item">
+                        <p class="sum">Tổng</p>
+                        <p class="sum-number" style="color:blue ;">700000</p>
+                    </div>
+                    <div class="container__body-main-item">
+                        <p class="pay">Đã đống</p>
+                        <p class="pay-number" style="color:rgb(0, 128, 79) ;">700000</p>
+                    </div>
+                    <div class="container__body-main-item">
+                        <p class="non-pay">Còn Thiếu </p>
+                        <p class="non-pay-number" style="color: red;">0</p>
+                    </div>
+                    <div class="container__body-main-item"></div>
+                </div>
+                <div class="container__body-footer"><i class="fa-solid fa-file-invoice"></i> 7/5/2022
+                    <div class="button">
+                        <button>Chi Tiết</button>
+                        <button>Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Phong 05-->
+            <div class="container__body-ele">
+
+                <div class="container__body-head">
+                    <p class="rom" style="font-size: 25px;">105</p>
+                    <p class="status" style="color: green;"><i class="fa-solid fa-arrows-to-dot"> </i>Đã đống đủ</p>
+                </div>
+                <div class="container__body-main">
+                    <div class="container__body-main-item">
+                        <p class="sum">Tổng</p>
+                        <p class="sum-number" style="color:blue ;">700000</p>
+                    </div>
+                    <div class="container__body-main-item">
+                        <p class="pay">Đã đống</p>
+                        <p class="pay-number" style="color:rgb(0, 128, 79) ;">700000</p>
+                    </div>
+                    <div class="container__body-main-item">
+                        <p class="non-pay">Còn Thiếu </p>
+                        <p class="non-pay-number" style="color: red;">0</p>
+                    </div>
+                    <div class="container__body-main-item"></div>
+                </div>
+                <div class="container__body-footer"><i class="fa-solid fa-file-invoice"></i> 7/5/2022
+                    <div class="button">
+                        <button>Chi Tiết</button>
+                        <button>Thanh Toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-name">Nguyễn Quốc Thiện_DTH205987</p>
+        <p class="footer-name">Âu Lâm Thành_DTH206100</p>
+    </div>
+</body>

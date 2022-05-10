@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/41d4801a01.js" crossorigin="anonymous"></script>
+    <title>Quản Lý Phòng Trọ</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="hearder">
+        <a href="#" class="hearder--text"> 
+            Hệ Thống Quản Lý Phòng Trọ
+        </a>
+       
+        <ul class="header--nav-manager">
+            <li class="nav-item" id="Home"><a href="./index.html"><i class="fa-solid fa-house"></i> Nhà </a></li>
+            <li class="nav-item"> <a href="./Element_rom.html"><i class="fa-solid fa-people-roof"></i> Phòng </a></li>
+            <li class="nav-item"> <a href="./Bill.html"><i class="fa-solid fa-soap"></i> Chốt HĐ </a></li>
+            <li class="nav-item"> <a href="./collect.html"><i class="fa-solid fa-money-bill-1-wave"></i>  Hóa Đơn </a></li>
+            <li class="nav-item"> <a href="./customer.html"><i class="fa-solid fa-user"></i>  Khách Hàng </a></li>
+        </ul>
+    
+        <div class="hearder--email" style="color: #fff;">
+            <i class="fa-solid fa-envelope"> </i> <a href="mailto: quocthienorg@gmail.com" class="hearder--email--adress"> quocthienorg@gmail.com</a>
+        </div>
+            <div class="hearder--phone" style="color: #fff;">
+                <i class="fa-solid fa-phone"></i> <p class="hearder--phone--numberphone"> 0789624614</p>
+            </div>
+        </div>
+<!-- Container -->
+        <div class="container">
+            <!-- Điện -->
+            <div class="container__electricity container-element">
+                <div class="container__electricity__right element-right">
+
+                    <div class="container__electricity__right-tile content__title">
+                        <b>Điện</b>
+                    </div>
+                    
+                    <div class="container__electricity__right-status ">
+                        <label for="status">Trạng thái</label>
+                        <select name="status" id="status-electric">
+                            <option value="">Hoạt động</option>
+                            <option value="">Tạm dừng </option>
+                            <option value="">Dừng hẳn</option>
+                        </select>
+                    </div>
+                    
+                    <div class="container__electricity__right-collect">
+                        <label for="collect-person">Theo người</label>
+                        <input type="radio"  name="collect" id="collect-person">
+                        <label for="collect-room">Theo phòng</label>
+                        <input type="radio" name="collect" id="collect-room">
+                        <label for="collect-quantity" >Theo số lượng</label>
+                        <input type="radio" name="collect" id="collect-quantity" checked>
+                    </div>
+                    
+                    <div class="container__electricity__right-price">
+                        <label for="priced">Đơn Giá:</label>
+                        <input type="number" value="5000" name="priced" id="priced" min="0">
+                    </div>
+                </div>
+                <div class="container__electricity__left  element-left ">
+                    <button type="button">Save</button>
+                </div>
+            </div>
+            
+            <div class="container__water">
+                <div class="container__water container-element">
+                    <div class="container__water__right element-right">
+    
+                        <div class="container__water__right-tile content__title ">
+                            <b>Nước</b>
+                        </div>
+                        
+                        <div class="container__water__right-status ">
+                            <label for="status">Trạng thái</label>
+                            <select name="status" id="status-electric">
+                                <option value="">Hoạt động</option>
+                                <option value="">Tạm dừng </option>
+                                <option value="">Dừng hẳn</option>
+                            </select>
+                        </div>
+                        
+                        <div class="container__water__right-collect">
+                            <label for="collect-person">Theo người</label>
+                            <input type="radio"  name="collect-water" id="collect-person">
+                            <label for="collect-room">Theo phòng</label>
+                            <input type="radio" name="collect-water" id="collect-room">
+                            <label for="collect-quantity" >Theo số lượng</label>
+                            <input type="radio" name="collect-water" id="collect-quantity" checked>
+                        </div>
+                        
+                        <div class="container__water__right-price">
+                            <label for="priced">Đơn Giá:</label>
+                            <input type="number" value="7000" name="priced" id="priced" min="0">
+                        </div>
+                    </div>
+                    <div class="container__water__left element-left">
+                        <button type="button">Save</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Loai phong -->
+            <div class="container__kindofroom container-element">
+                    <div class="container__rom__right element-right">
+    
+                        <div class="container__rom__right-tile content__title ">
+                            <b>Loại Phòng</b>
+                        </div>
+                        
+                        <div class="container__rom__right-status ">
+                            <label for="status">Loại</label>
+                            <select name="status" id="status-electric">
+                                <option value="">Loại A</option>
+                                <option value="">Loại B </option>
+                                <option value="">Loại C</option>
+                            </select>
+                        </div>                        
+                        <div class="container__rom__right-price">
+                            <label for="priced">Đơn Giá:</label>
+                            <input type="number" value="700000" name="priced" id="priced" min="0">
+                        </div>
+                    </div>
+                    <div class="container__rom__left element-left">
+                        <button type="button">Save</button>
+                    </div>
+            </div>
+            <div class="container__turnover container-element">
+
+                <div class="container__turnover__tittle">
+                    <b style="font-size: 20px;">Doanh Thu </b>
+                </div>
+
+                <div class="container__turnover__body elemet-body">
+                    <div class="container__turnover-item item-left">
+                        <span style="color: red; font-size: 20px;">0</span>
+                        <p class="content" style="color: red; font-size: 20px;">Chưa thu</p>
+                    </div>
+                    <div class="container__turnover-item">
+                        <span style="color: blue; font-size: 20px;">0</span>
+                        <p class="content" style="color: blue; font-size: 20px;">Đã thu</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container__bill container-element">
+                
+                <div class="container__bill__tittle ">
+                    <b style="font-size: 20px;">Hoán Đơn </b>
+                </div>
+                <div class="container__bill__body ">
+                    <div class="container__bill-item item-left">
+                        <span style="color: red; font-size: 20px;">0</span>
+                        <p class="content" style="color: red; font-size: 20px;">Chưa đóng</p>
+                    </div>
+                    <div class="container__bill-item item-left">
+                        <span style="color: blue; font-size: 20px;">0</span>
+                        <p class="content" style="color: blue; font-size: 20px;">Đã đóng</p>
+                    </div>
+                    <div class="container__bill-item">
+                        <span style="color: rgb(12, 12, 10); ">0</span>
+                        <p class="content" style="color: rgb(12, 12, 10); font-size: 20px;">Đơn Nháp</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container__rom"></div>
+        </div> <!-- Container-->
+        <div class="footer">
+            <p class="footer-name">Nguyễn Quốc Thiện_DTH205987</p>
+            <p class="footer-name">Âu Lâm Thành_DTH206100</p>
+        </div>
+</body>
+</html>
